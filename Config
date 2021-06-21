@@ -1,0 +1,28 @@
+package.PCompiler = {
+    interfaces = (1.x);
+    scope = third-party;
+
+    third-party-configuration = {
+        licenseType = "MIT";
+        licenseFile = "Unknown";
+        thirdPartyVersion = "1.0.12";
+        repository = "dotnet";
+        downloadType = "binaries";
+    };
+
+    deploy = {
+        generic = true;
+    };
+
+    build-environment = {
+        chroot = basic;
+        network-access = blocked;
+    };
+
+    build-system = no-op;
+    build-tools = {
+        1.x = {
+            NoOpBuild = 1.0;
+        };
+    };
+};
